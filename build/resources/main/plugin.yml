@@ -1,0 +1,4 @@
+name: manbangdo-plugin
+version: '0.0.1'
+main: kr.isamin.manbangdoPlugin.ManbangdoPlugin
+api-version: '1.21'
