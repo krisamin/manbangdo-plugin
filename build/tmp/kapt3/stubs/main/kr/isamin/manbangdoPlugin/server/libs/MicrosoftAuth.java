@@ -1,0 +1,15 @@
+package kr.isamin.manbangdoPlugin.server.libs;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J#\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b2\u0006\u0010\n\u001a\u00020\u000bH\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\b\f\u0010\rJ?\u0010\u000e\u001a\b\u0012\u0004\u0012\u0002H\u000f0\b\"\u0004\b\u0000\u0010\u000f2\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\u00012\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u0002H\u000f0\u0013H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\b\u0014\u0010\u0015J)\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00170\b2\u0006\u0010\u0018\u001a\u00020\t2\u0006\u0010\u0019\u001a\u00020\t\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\b\u001a\u0010\u001bJ!\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\b2\u0006\u0010\u0018\u001a\u00020\t\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\b\u001e\u0010\u001fJ!\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001d0\b2\u0006\u0010\u0018\u001a\u00020\t\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\b!\u0010\u001fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\b!\n\u0005\b\u00a1\u001e0\u0001\u00a8\u0006\""}, d2 = {"Lkr/isamin/manbangdoPlugin/server/libs/MicrosoftAuth;", "", "()V", "client", "Lokhttp3/OkHttpClient;", "gson", "Lcom/google/gson/Gson;", "executeRequest", "Lkotlin/Result;", "", "request", "Lokhttp3/Request;", "executeRequest-IoAF18A", "(Lokhttp3/Request;)Ljava/lang/Object;", "makeHttpRequest", "T", "url", "requestBody", "responseClass", "Ljava/lang/Class;", "makeHttpRequest-0E7RQCE", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", "minecraftAuth", "Lkr/isamin/manbangdoPlugin/server/libs/MinecraftAuthResponse;", "token", "uhs", "minecraftAuth-gIAlu-s", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", "xboxLiveAuth", "Lkr/isamin/manbangdoPlugin/server/libs/XboxAuthResponse;", "xboxLiveAuth-IoAF18A", "(Ljava/lang/String;)Ljava/lang/Object;", "xstsAuth", "xstsAuth-IoAF18A", "manbangdo-plugin"})
+public final class MicrosoftAuth {
+    @org.jetbrains.annotations.NotNull()
+    private static final okhttp3.OkHttpClient client = null;
+    @org.jetbrains.annotations.NotNull()
+    private static final com.google.gson.Gson gson = null;
+    @org.jetbrains.annotations.NotNull()
+    public static final kr.isamin.manbangdoPlugin.server.libs.MicrosoftAuth INSTANCE = null;
+    
+    private MicrosoftAuth() {
+        super();
+    }
+}

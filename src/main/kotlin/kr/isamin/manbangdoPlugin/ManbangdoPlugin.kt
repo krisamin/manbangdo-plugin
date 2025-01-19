@@ -2,6 +2,7 @@ package kr.isamin.manbangdoPlugin
 
 import kr.isamin.manbangdoPlugin.database.DatabaseApp
 import kr.isamin.manbangdoPlugin.discord.DiscordApp
+import kr.isamin.manbangdoPlugin.minecraft.MinecraftApp
 import kr.isamin.manbangdoPlugin.server.ServerApp
 import org.bukkit.plugin.java.JavaPlugin
 
@@ -15,6 +16,7 @@ class ManbangdoPlugin : JavaPlugin() {
         DatabaseApp.enable()
         DiscordApp.enable()
         ServerApp.enable()
+        MinecraftApp.enable()
 
         this.logger.info("==== 만방도 플러그인 활성화됨 ====")
     }

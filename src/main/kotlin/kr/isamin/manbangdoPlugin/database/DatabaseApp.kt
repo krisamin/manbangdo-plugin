@@ -3,8 +3,11 @@ package kr.isamin.manbangdoPlugin.database
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import kr.isamin.manbangdoPlugin.ManbangdoPlugin
+import kr.isamin.manbangdoPlugin.database.schemas.Users
 import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.TransactionManager
+import org.jetbrains.exposed.sql.transactions.transaction
 
 object DatabaseApp {
     private lateinit var app: Database
@@ -29,6 +32,8 @@ object DatabaseApp {
         try {
             app = Database.connect(source)
 
+            this.migrate()
+
             this.plugin.logger.info("[Database] 활성화됨")
         } catch (e: Exception) {
             this.plugin.logger.warning("[Database] " + e.message)
@@ -45,6 +50,12 @@ object DatabaseApp {
             this.plugin.logger.info("[Database] 비활성화됨")
         } else {
             this.plugin.logger.info("[Database] 비활성화 넘어감")
+        }
+    }
+
+    private fun migrate() {
+        transaction {
+            SchemaUtils.createMissingTablesAndColumns(Users)
         }
     }
 }
